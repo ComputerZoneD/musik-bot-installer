@@ -35,8 +35,8 @@ greenMessage "Erst werden die Programme Installiert "
 sleep 5
 apt-get install x11vnc xvfb libxcursor1 ca-certificates bzip2 --force-yes 
 update-ca-certificates 
-apt-get install libglib2.0-0 curl 
-apt-get install screen
+apt-get install libglib2.0-0 curl --force-yes  
+apt-get install screen --force-yes 
 clear
 redMessage "##########################################"
 redMessage "###------------------------------------ 5%"
@@ -131,9 +131,11 @@ redMessage "##################################### 100%"
 redMessage "##########################################"
 sleep 1
 
-greenMessage "Das sind die Verwaltungs Befehle /etc/init.d/sinusbot {start|stop|status|restart|console|update|backup}"
+greenMessage ""
 sleep 5
-greenMessage "Mit dem Befehl /etc/init.d/sinusbot start kannst du deinen musikbot starten"
+greenMessage "Mit dem Befehl sh /opt/ts3soundboard/start.sh kannst du deinen Musikbot starten"
+magentaMessage "Mit dem Befehl sh /opt/ts3soundboard/restart.sh kannst du deinen Musikbot restarten"
+cyanMessage "Mit dem Befehl sh /opt/ts3soundboard/stop.sh kannst du deinen Musikbot stoppen"
 redMessage "Zum Verlassen duecke Strg + C"
 
 sleep 100
