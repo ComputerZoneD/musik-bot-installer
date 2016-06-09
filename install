@@ -55,8 +55,8 @@ sleep 1
 
 greenMessage "Der Bot wird Heruntergeladen"
 sleep 5
-curl -O https://www.sinusbot.com/pre/sinusbot-0.9.11-ee30ef7.tar.bz2
-tar -xjf sinusbot-0.9.11-ee30ef7.tar.bz2
+curl -O  https://www.sinusbot.com/pre/sinusbot-0.9.12.2-58b509d.tar.bz2
+tar -xjf sinusbot-0.9.12.2-58b509d.tar.bz2
 clear
 redMessage "##########################################"
 redMessage "########------------------------------ 15%"
@@ -77,7 +77,8 @@ sleep 5
 wget http://dl.4players.de/ts/releases/3.0.18.2/TeamSpeak3-Client-linux_amd64-3.0.18.2.run
 chmod 0755 TeamSpeak3-Client-linux_amd64-3.0.18.2.run
 ./TeamSpeak3-Client-linux_amd64-3.0.18.2.run
-cp plugin/libsoundbot_plugin.so /opt/ts3soundboard3/TeamSpeak3-Client-linux_amd64/plugins
+cp plugin/libsoundbot_plugin.so /opt/ts3soundboard/TeamSpeak3-Client-linux_amd64/plugins/
+
 clear
 redMessage "##########################################"
 redMessage "####################------------------ 55%"
@@ -87,6 +88,7 @@ sleep 1
 greenMessage "Setzte Rechte"
 sleep 5
 chmod 755 sinusbot
+
 clear
 redMessage "##########################################"
 redMessage "########################-------------- 85%"
@@ -95,14 +97,22 @@ sleep 1
 
 greenMessage "Installiere das Startscript"
 sleep 5
-cd /etc/init.d
-curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/sinusbot
-sed -i 's/USER="mybotuser"/USER="'sinusbot'"/g' /etc/init.d/sinusbot
-chmod +x /etc/init.d/sinusbot
-update-rc.d sinusbot defaults >/dev/null 2>&1
-sh /etc/init.d/sinusbot start
-sleep 10
-sh /etc/init.d/sinusbot start
+
+ 
+cd /opt/ts3soundboard/
+curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/start.sh
+curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/restart.sh
+curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/stop.sh
+chmod 777 restart.sh
+chmod 777 start.sh
+chmod 777 stop.sh
+greenMessage "Bot wird Gestartet Moment..."
+
+./start.sh
+sleep 20
+./stop.sh
+greenMessage "Bot wird Gestopppt Moment..."
+sleep 1
 clear
 redMessage "##########################################"
 redMessage "#################################----- 95%"
@@ -114,7 +124,7 @@ sleep 5
 cd /usr/local/bin/
 curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/youtube-dl
 chmod 777 youtube-dl
-sed -i 's/YoutubeDLPath = \"\"/YoutubeDLPath = \"\/usr\/local\/bin\/youtube-dl\"/g' /opt/ts3soundboard3/config.ini
+sed -i 's/YoutubeDLPath = \"\"/YoutubeDLPath = \"\/usr\/local\/bin\/youtube-dl\"/g' /opt/ts3soundboard/config.ini
 sleep 10
 clear
 redMessage "##########################################"
