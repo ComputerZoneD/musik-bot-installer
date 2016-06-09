@@ -35,16 +35,16 @@ greenMessage "Erst werden die Programme Installiert "
 sleep 5
 apt-get install x11vnc xvfb libxcursor1 ca-certificates bzip2 --force-yes 
 update-ca-certificates 
-apt-get install libglib2.0-0 curl
+apt-get install libglib2.0-0 curl 
+apt-get install screen
 clear
 redMessage "##########################################"
 redMessage "###------------------------------------ 5%"
 redMessage "##########################################"
 sleep 1
 
-greenMessage "User wird erstellt.... "
+greenMessage "Datei wird erstellt.... "
 sleep 5
-adduser sinusbot
 mkdir -p /opt/ts3soundboard
 cd /opt/ts3soundboard
 clear
@@ -65,7 +65,6 @@ sleep 1
 greenMessage "Bearbeite Datein"
 sleep 5
 cp config.ini.dist config.ini
-chown -R sinusbot:sinusbot /opt/ts3soundboard
 clear
 redMessage "##########################################"
 redMessage "#############------------------------- 25%"
