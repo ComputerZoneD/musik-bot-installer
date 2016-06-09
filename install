@@ -44,9 +44,9 @@ sleep 1
 
 greenMessage "User wird erstellt.... "
 sleep 5
-adduser sinusbot3
-mkdir -p /opt/ts3soundboard3
-cd /opt/ts3soundboard3
+adduser sinusbot
+mkdir -p /opt/ts3soundboard
+cd /opt/ts3soundboard
 clear
 redMessage "##########################################"
 redMessage "######-------------------------------- 10%"
@@ -65,7 +65,7 @@ sleep 1
 greenMessage "Bearbeite Datein"
 sleep 5
 cp config.ini.dist config.ini
-chown -R sinusbot2:sinusbot2 /opt/ts3soundboard3
+chown -R sinusbot:sinusbot /opt/ts3soundboard
 clear
 redMessage "##########################################"
 redMessage "#############------------------------- 25%"
