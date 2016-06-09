@@ -25,7 +25,7 @@ echo -e "Musikbot Install Script"
 echo -e "By Blacktiger "
 echo -e "Viel Spass"
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' =
-sleep 1
+sleep 5
 clear
 redMessage "##########################################"
 redMessage "-------------------------------------- 0%"
