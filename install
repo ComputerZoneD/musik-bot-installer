@@ -121,6 +121,7 @@ sleep 1
 
 greenMessage "Das sind die Verwaltungs Befehle /etc/init.d/sinusbot {start|stop|status|restart|console|update|backup}"
 sleep 5
+rm install
 greenMessage "Mit dem Befehl /etc/init.d/sinusbot start kannst du deinen musikbot starten"
 redMessage "Zum Verlassen duecke Strg + C"
 
