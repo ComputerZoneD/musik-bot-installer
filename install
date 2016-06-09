@@ -100,9 +100,9 @@ curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for
 sed -i 's/USER="mybotuser"/USER="'sinusbot'"/g' /etc/init.d/sinusbot
 chmod +x /etc/init.d/sinusbot
 update-rc.d sinusbot defaults >/dev/null 2>&1
-/etc/init.d/sinusbot start
+sh /etc/init.d/sinusbot start
 sleep 10
-/etc/init.d/sinusbot start
+sh /etc/init.d/sinusbot start
 clear
 redMessage "##########################################"
 redMessage "#################################----- 95%"
