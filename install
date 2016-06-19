@@ -133,9 +133,9 @@ sleep 1
 
 greenMessage ""
 sleep 5
-greenMessage "Mit dem Befehl sh /opt/ts3soundboard/start.sh kannst du deinen Musikbot starten"
-magentaMessage "Mit dem Befehl sh /opt/ts3soundboard/restart.sh kannst du deinen Musikbot restarten"
-cyanMessage "Mit dem Befehl sh /opt/ts3soundboard/stop.sh kannst du deinen Musikbot stoppen"
+greenMessage "Mit dem Befehl /opt/ts3soundboard && ./start.sh kannst du deinen Musikbot starten"
+magentaMessage "Mit dem Befehl /opt/ts3soundboard && ./stop.sh kannst du deinen Musikbot restarten"
+cyanMessage "Mit dem Befehl /opt/ts3soundboard && ./restart.sh kannst du deinen Musikbot stoppen"
 redMessage "Zum Verlassen duecke Strg + C"
 
 sleep 100
