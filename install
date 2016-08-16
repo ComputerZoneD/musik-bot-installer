@@ -55,8 +55,8 @@ sleep 1
 
 greenMessage "Der Bot wird Heruntergeladen"
 sleep 5
-curl -O  https://www.sinusbot.com/pre/sinusbot-0.9.12.2-58b509d.tar.bz2
-tar -xjf sinusbot-0.9.12.2-58b509d.tar.bz2
+curl -O  https://www.sinusbot.com/pre/sinusbot-0.9.12.3-36fce3c.tar.bz2
+tar -xjf sinusbot-0.9.12.3-36fce3c.tar.bz2
 clear
 redMessage "##########################################"
 redMessage "########------------------------------ 15%"
