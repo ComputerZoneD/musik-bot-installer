@@ -131,12 +131,55 @@ redMessage "##################################### 100%"
 redMessage "##########################################"
 sleep 1
 
-greenMessage ""
+
 sleep 5
+greenMessage "First Start wird vorbereitet NEU"
+cd /opt/ts3soundboard/
+wget http://file.server-space.online/firststart.sh
+chmod 777 firststart.sh
+greenMessage "Datei wird jetzt Gestartet, bitte Melde dich im Musikbots Webinterface an und setzte ein neues Passwort wenn du fertig bist mach Strg + C"
+sleep 10
+clear
+redMessage "Das Script Startet in 5"
+sleep 1 
+clear
+redMessage "Das Script Startet in 4"
+sleep 1 
+clear
+redMessage "Das Script Startet in 3"
+sleep 1 
+clear
+redMessage "Das Script Startet in 2"
+sleep 1 
+clear
+redMessage "Das Script Startet in 1"
+sleep 1 
+./firststart.sh
+
+clear
+redMessage "Fertig.... geht weiter in 5"
+sleep 1 
+clear
+redMessage "Fertig.... geht weiter in 4"
+sleep 1 
+clear
+redMessage "Fertig.... geht weiter in 3"
+sleep 1 
+clear
+redMessage "Fertig.... geht weiter in 2"
+sleep 1 
+clear
+redMessage "Fertig.... geht weiter in 1"
+sleep 1 
+clear
+
 greenMessage "Mit dem Befehl cd /opt/ts3soundboard && ./start.sh kannst du deinen Musikbot starten"
 magentaMessage "Mit dem Befehl cd /opt/ts3soundboard && ./stop.sh kannst du deinen Musikbot restarten"
 cyanMessage "Mit dem Befehl cd /opt/ts3soundboard && ./restart.sh kannst du deinen Musikbot Restarten"
+
+
 redMessage "Zum Verlassen duecke Strg + C"
+
 
 sleep 100
 
