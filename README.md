@@ -6,7 +6,7 @@
 #Installation
 
 
-wget https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/install && chmod 777 install && ./install
+wget --no-check-certificate https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/install && chmod 777 install && ./install
 
 
 Support und Hilfe
@@ -15,14 +15,14 @@ Support und Hilfe
 
 
 
-#Bugs und Fehlermeldungen 
+#Bugs und Fehlermeldungen Coming Soon
 
 ╔»Fehler: 
 
-╠» ERROR: The certificate of 'raw.githubusercontent.com' is not trusted.
+╠» 
 
-╠» ERROR: The certificate of 'raw.githubusercontent.com' hasn't got a known issuer.
+╠» 
 
-╠» Lösung :  Einfach in Putty den Befehl machen
+╠»
 
-╚» apt-get install ca-certificates
+╚» 
