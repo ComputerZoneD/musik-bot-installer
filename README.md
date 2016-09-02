@@ -18,7 +18,11 @@ Support und Hilfe
 #Bugs und Fehlermeldungen 
 
 ╔»Fehler: 
+
 ╠» ERROR: The certificate of 'raw.githubusercontent.com' is not trusted.
+
 ╠» ERROR: The certificate of 'raw.githubusercontent.com' hasn't got a known issuer.
+
 ╠» Lösung :  Einfach in Putty den Befehl machen
+
 ╚» apt-get install ca-certificates
