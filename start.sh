@@ -6,6 +6,7 @@ echo "Versions Check...."
 sleep 3
 cat Version.txt
 sleep 3
+echo "   "
 cat < news.txt
 sleep 5
 clear
