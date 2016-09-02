@@ -1,6 +1,6 @@
 wget http://file.server-space.online/news.txt >/dev/null 2>&1
 wget http://file.server-space.online/1029.txt >/dev/null 2>&1
-chmod 777 News.txt
+chmod 777 news.txt
 echo "Versions Check...."
 sleep 3
 grep palita < Version.txt
