@@ -19,15 +19,14 @@ Support und Hilfe
 
 
 
-#Bugs und Fehlermeldungen Coming Soon
+#Bugs und Fehlermeldungen 
 
 ╔»Fehler: Youtube dl geht nicht
 
 ╠» lösung 
 
-
 ╠»  wget --no-check-certificate https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/Youtubedlinstall && chmod 777 Youtubedlinstall && ./Youtubedlinstall
 
-╠»
+╠» Danach den bot neustarten
 
 ╚» 
