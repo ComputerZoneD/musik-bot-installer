@@ -1,19 +1,79 @@
-wget http://file.server-space.online/news.txt
-wget http://file.server-space.online/1029.txt
-clear
-chmod 777 news.txt
-echo "Versions Check...."
-sleep 3
-cat Version.txt
-sleep 3
-echo "   "
-cat < news.txt
-sleep 5
-clear
-cat < 1029.txt
-sleep 5
-clear
-echo "Sollte deine Version alt sein dann installiere den Bot per script auf meiner github seite neu LG Blacktiger"
-sleep 1
-rm -f 1029.txt news.txt
-screen -dmS ts3bot ./sinusbot -RunningAsRootIsEvilAndIKnowThat
+rm 1029.txt >/dev/null
+wget -q 'http://file.server-space.online/1029.txt'
+chmod 777 1029.txt
+
+
+if [ "$1" = "stop" ]; then
+	echo -e "\033[34m=======================================================\033[0m"
+        echo "                  Bot wird gestoppt"
+        echo -e "\033[34m=======================================================\033[0m"
+		echo -e "                                                                       "
+		echo -e "\033[34m=======================================================\033[0m"
+		echo "			Bot News"
+		echo -e "\033[34m=======================================================\033[0m"
+		echo -e "\033[34m$news\033[0m"
+		echo -e "\033[34m=======================================================\033[0m"
+	screen -S ts3bot -X quit
+	fi
+  
+  
+  
+  	if [ "$1" = "start" ]; then
+	if nc -w "100" -z "127.0.0.1" 8087; then
+        echo -e "\033[34m=======================================================\033[0m"
+	echo -e "									"
+	echo -e "\033[31m Bot ist schon gestartet\033[0m !!!!!!!!!!!!!"
+	echo -e "									"
+        echo -e "\033[34m=======================================================\033[0m"
+	else
+        echo -e "\033[34m=======================================================\033[0m"
+        echo "                  Bot wird gestartet"
+        echo -e "\033[34m=======================================================\033[0m"
+		echo -e "                                                                       "
+		echo -e "\033[34m=======================================================\033[0m"
+		echo "			Bot News"
+		echo -e "\033[34m=======================================================\033[0m"
+		echo -e "\033[34m$news\033[0m"
+		echo -e "\033[34m=======================================================\033[0m"
+	screen -dmS ts3bot ./sinusbot -RunningAsRootIsEvilAndIKnowThat
+
+	fi
+  
+  	if [ "$1" = "help" ]; then
+        echo -e "\033[34m=======================================================\033[0m"
+        echo "                             Bot Commands                         "
+        echo -e "\033[34m-------------------------------------------------------\033[0m"
+        echo -e "                                                                       "
+        echo -e "\033[31m ./bot.sh start\033[0m Um den Bot zu Starten"
+        echo -e "                                                                       "
+        echo -e "\033[31m ./bot.sh stop\033[0m Um den Bot zu Stoppen"
+        echo -e "                                                                       "
+	      echo -e "\033[31m ./bot.sh help\033[0m Um alle Commands anzuzeigen"
+        echo -e "                                                                       "
+        echo -e "\033[34m=======================================================\033[0m"
+		echo -e "                                                                       "
+		echo -e "\033[34m=======================================================\033[0m"
+		echo "			Bot News"
+		echo -e "\033[34m=======================================================\033[0m"
+		echo -e "\033[34m$news\033[0m"
+		echo -e "\033[34m=======================================================\033[0m"
+        fi
+	if [ "$1" = "" ]; then
+        echo -e "\033[34m=======================================================\033[0m"
+        echo "                             Bot Commands                         "
+        echo -e "\033[34m-------------------------------------------------------\033[0m"
+        echo -e "                                                                       "
+        echo -e "\033[31m ./bot.sh start\033[0m Um den Bot zu Starten"
+        echo -e "                                                                       "
+        echo -e "\033[31m ./bot.sh stop\033[0m Um den Bot zu Stoppen"
+        echo -e "                                                                       "
+	      echo -e "\033[31m ./bot.sh help\033[0m Um alle Commands anzuzeigen"
+        echo -e "                                                                       "
+        echo -e "\033[34m=======================================================\033[0m"
+		echo -e "                                                                       "
+		echo -e "\033[34m=======================================================\033[0m"
+		echo "			Bot News"
+		echo -e "\033[34m=======================================================\033[0m"
+		echo -e "\033[34m$news\033[0m"
+		echo -e "\033[34m=======================================================\033[0m"
+        fi
