@@ -105,11 +105,7 @@ sleep 5
  
 cd /opt/ts3soundboard/
 curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/start.sh
-curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/restart.sh
-curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/stop.sh
-chmod 777 restart.sh
 chmod 777 start.sh
-chmod 777 stop.sh
 greenMessage "Bot wird Gestartet Moment..."
 
 ./start.sh
@@ -178,9 +174,9 @@ redMessage "Fertig.... geht weiter in 1"
 sleep 1 
 clear
 
-greenMessage "Mit dem Befehl cd /opt/ts3soundboard && ./start.sh kannst du deinen Musikbot starten"
-magentaMessage "Mit dem Befehl cd /opt/ts3soundboard && ./stop.sh kannst du deinen Musikbot restarten"
-cyanMessage "Mit dem Befehl cd /opt/ts3soundboard && ./restart.sh kannst du deinen Musikbot Restarten"
+greenMessage "Mit dem Befehl cd /opt/ts3soundboard && ./start.sh start kannst du deinen Musikbot starten"
+magentaMessage "Mit dem Befehl cd /opt/ts3soundboard && ./start.sh stop kannst du deinen Musikbot restarten"
+
 
 
 redMessage "Zum Verlassen duecke Strg + C"
