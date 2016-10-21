@@ -1,6 +1,5 @@
 # Musikbot-Installer-for-Ubuntu-und-Debian
-#Donation Aktion Infos Wichtig!!
-Jede Spende bekommt eine Besondere Sache Mehr infos unter : coming soon
+
 <dl>
 
 
