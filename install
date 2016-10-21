@@ -34,7 +34,7 @@ sleep 1
 greenMessage "Erst werden die Programme Installiert "
 sleep 5
 apt-get update && apt-get upgrade 
-apt-get install x11vnc xvfb libxcursor1 ca-certificates bzip2 --force-yes 
+apt-get install x11vnc xvfb libxcursor1 ca-certificates bzip2 netcat --force-yes 
 update-ca-certificates 
 apt-get install libglib2.0-0 curl --force-yes  
 apt-get install screen --force-yes 
