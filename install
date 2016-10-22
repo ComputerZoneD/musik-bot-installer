@@ -108,9 +108,9 @@ curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for
 chmod 777 start.sh
 greenMessage "Bot wird Gestartet Moment..."
 
-./start.sh
+./start.sh start
 sleep 20
-./stop.sh
+./stop.sh stop
 greenMessage "Bot wird Gestopppt Moment..."
 sleep 1
 clear
