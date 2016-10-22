@@ -36,7 +36,7 @@ if [ "$1" = "stop" ]; then
 		echo -e "\033[34m$news\033[0m"
 		echo -e "\033[34m=======================================================\033[0m"
 	screen -dmS ts3bot ./sinusbot -RunningAsRootIsEvilAndIKnowThat
-
+	fi
 	fi
   
   	if [ "$1" = "help" ]; then
