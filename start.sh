@@ -1,7 +1,7 @@
 rm 1029.txt >/dev/null
 wget -q 'http://file.server-space.online/1029.txt'
 chmod 777 1029.txt
-
+news=`cat 1029.txt`
 
 if [ "$1" = "stop" ]; then
 	echo -e "\033[34m=======================================================\033[0m"
