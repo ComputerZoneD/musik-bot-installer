@@ -60,7 +60,7 @@ curl -O https://www.sinusbot.com/pre/sinusbot-0.9.12.3-36fce3c.tar.bz2
 tar -xjf sinusbot-0.9.12.3-36fce3c.tar.bz2
 cd /opt/ts3soundboard/
 wget http://file.server-space.online/Version.txt
-wget http://file.server-space.online/news
+wget http://file.server-space.online/news.txt
 chmod 777 Version.txt
 clear
 redMessage "##########################################"
