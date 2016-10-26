@@ -110,7 +110,7 @@ greenMessage "Bot wird Gestartet Moment..."
 
 ./start.sh start
 sleep 20
-./stop.sh start
+./start.sh stop
 greenMessage "Bot wird Gestopppt Moment..."
 sleep 1
 clear
