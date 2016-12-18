@@ -136,8 +136,6 @@ sleep 1
 sleep 5
 greenMessage "First Start wird vorbereitet NEU"
 cd /opt/ts3soundboard/
-wget http://file.server-space.online/firststart.sh
-chmod 777 firststart.sh
 greenMessage "Datei wird jetzt Gestartet, bitte Melde dich im Musikbots Webinterface an und setzte ein neues Passwort wenn du fertig bist mach Strg + C"
 sleep 10
 clear
@@ -155,7 +153,7 @@ sleep 1
 clear
 redMessage "Das Script Startet in 1"
 sleep 1 
-./firststart.sh
+./sinusbot -RunningAsRootIsEvilAndIKnowThat -pwreset="foobar"
 
 clear
 redMessage "Fertig.... geht weiter in 5"
