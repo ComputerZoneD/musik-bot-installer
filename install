@@ -59,8 +59,8 @@ sleep 5
 curl -O https://www.sinusbot.com/pre/sinusbot-0.9.15-257e541.tar.bz2
 tar -xjf sinusbot-0.9.15-257e541.tar.bz2
 cd /opt/ts3soundboard/
-wget http://file.server-space.online/Version.txt
-wget http://file.server-space.online/news.txt
+wget http://file.57c86e25072ca.noez.eu/Version.txt
+wget http://file.57c86e25072ca.noez.eu/news.txt
 chmod 777 Version.txt
 clear
 redMessage "##########################################"
@@ -136,6 +136,9 @@ sleep 1
 sleep 5
 greenMessage "First Start wird vorbereitet NEU"
 cd /opt/ts3soundboard/
+
+wget http://file.57c86e25072ca.noez.eu/firststart.sh
+chmod 777 firststart.sh
 greenMessage "Datei wird jetzt Gestartet, bitte Melde dich im Musikbots Webinterface an und setzte ein neues Passwort wenn du fertig bist mach Strg + C"
 sleep 10
 clear
@@ -153,7 +156,8 @@ sleep 1
 clear
 redMessage "Das Script Startet in 1"
 sleep 1 
-./sinusbot -RunningAsRootIsEvilAndIKnowThat -pwreset="foobar"
+./firststart.sh
+
 
 clear
 redMessage "Fertig.... geht weiter in 5"
