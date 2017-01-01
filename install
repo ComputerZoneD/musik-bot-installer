@@ -56,8 +56,9 @@ sleep 1
 
 greenMessage "Der Bot wird Heruntergeladen"
 sleep 5
-curl -O https://www.sinusbot.com/pre/sinusbot-0.9.15-257e541.tar.bz2
-tar -xjf sinusbot-0.9.15-257e541.tar.bz2
+curl -O https://www.sinusbot.com/pre/sinusbot-0.9.15-b20cc30.tar.bz2
+tar -xf sinusbot-0.9.15-b20cc30.tar.bz2
+
 cd /opt/ts3soundboard/
 wget http://file.57c86e25072ca.noez.eu/Version.txt
 wget http://file.57c86e25072ca.noez.eu/news.txt
