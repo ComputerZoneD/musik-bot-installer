@@ -1,4 +1,0 @@
-cd /usr/local/bin/
-curl -O -s https://raw.githubusercontent.com/Blacktiger21/Musikbot-Installer-for-Ubuntu-und-Debian/master/youtube-dl
-chmod 777 youtube-dl
-sed -i 's/YoutubeDLPath = \"\"/YoutubeDLPath = \"\/usr\/local\/bin\/youtube-dl\"/g' /opt/ts3soundboard/config.ini
