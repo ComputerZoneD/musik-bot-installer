@@ -25,6 +25,9 @@ if [ "$1" = "stop" ]; then
 	if [ -f /opt/ts3soundboard/update.sh ]
   then
     rm -fr /opt/ts3soundboard/update.sh
+    cd cd /opt/ts3soundboard/
+  wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/master/update.sh && chmod 777 update.sh && ./update.sh
+chmod 777 /opt/ts3soundboard/update.sh
   else
   cd cd /opt/ts3soundboard/
   wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/master/update.sh && chmod 777 update.sh && ./update.sh
