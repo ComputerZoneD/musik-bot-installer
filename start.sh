@@ -16,10 +16,11 @@ if [ "$1" = "stop" ]; then
 	screen -S ts3bot -X quit
 	fi
   
-  if [ "$1" = "Update" ]; then
+  if [ "$1" = "update" ]; then
 	echo -e "\033[34m=======================================================\033[0m"
         echo "                  Bot Update"
         echo -e "\033[34m=======================================================\033[0m"
+	screen -S ts3bot -X quit
 	cd /opt/ts3soundboard/
 
 	if [ -f /opt/ts3soundboard/update.sh ]
@@ -65,6 +66,8 @@ fi
         echo -e "                                                                       "
         echo -e "\033[31m ./start.sh stop\033[0m Um den Bot zu Stoppen"
         echo -e "                                                                       "
+	        echo -e "\033[31m ./start.sh update\033[0m Bot Update starten"
+		        echo -e "                                                                       "
 	      echo -e "\033[31m ./start.sh help\033[0m Um alle Commands anzuzeigen"
         echo -e "                                                                       "
         echo -e "\033[34m=======================================================\033[0m"
@@ -86,6 +89,8 @@ fi
         echo -e "\033[31m ./start.sh start\033[0m Um den Bot zu Starten"
         echo -e "                                                                       "
         echo -e "\033[31m ./start.sh stop\033[0m Um den Bot zu Stoppen"
+		        echo -e "\033[31m ./start.sh update\033[0m Bot Update starten"
+		        echo -e "                                                                       "
         echo -e "                                                                       "
 	      echo -e "\033[31m ./start.sh help\033[0m Um alle Commands anzuzeigen"
         echo -e "                                                                       "
