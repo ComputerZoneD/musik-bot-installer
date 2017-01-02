@@ -20,9 +20,16 @@ if [ "$1" = "stop" ]; then
 	echo -e "\033[34m=======================================================\033[0m"
         echo "                  Bot Update"
         echo -e "\033[34m=======================================================\033[0m"
+	cd /opt/ts3soundboard/
 
+	if [ -f /opt/ts3soundboard/update.sh ]
+  then
+    rm -fr /opt/ts3soundboard/update.sh
+  else
+  cd cd /opt/ts3soundboard/
+  wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/master/update.sh && chmod 777 update.sh && ./update.sh
 
-	
+fi
 	fi
   
   	if [ "$1" = "start" ]; then
