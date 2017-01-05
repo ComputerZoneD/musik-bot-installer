@@ -5,9 +5,12 @@
 
 </dl>
 
-### Bei Problemen bitte ein Issues bei Github machen !!!!!!
+#### Bei Problemen bitte ein Issues bei Github machen !!!!!!
 
 ----------------------------------------
+
+#Updates
+
 ### [Für Bestehende USER] Update auf Version 1.0.1 Neuste Stand [02-01-2017] 
 ```sh
 cd /opt/ts3soundboard/ && rm start.sh && wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/master/start.sh && chmod 777 start.sh && ./start.sh update
