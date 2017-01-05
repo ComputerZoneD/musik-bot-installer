@@ -20,16 +20,16 @@ cd /opt/ts3soundboard/ && rm start.sh && wget --no-check-certificate https://raw
 wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/master/install && chmod 777 install && ./install
 
 ```
+------------------------------------------------------------------
 
-
-> Support und Hilfe
+> ###Support und Hilfe
 
 > #### Bei Problemen bitte ein Issues bei Github machen !!!!!!
 
 > Email Adresse : blacktiger@letsplaylounge.de
 
 
-
+-----------------------------------------------------------------------------
 ##Bugs und Fehlermeldungen 
 
 >Fehler: Youtube dl geht nicht
