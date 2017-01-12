@@ -37,7 +37,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot
 <table>
 <a href="https://discord.gg/yZM5zzD"><img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png" alt="Discord Server" height="100" width="300" /></a>
 </table>
-
+Um zu joinen klick auf das Bild
 -----------------------------------------------------------------------------
 ##Bugs und Fehlermeldungen 
 
