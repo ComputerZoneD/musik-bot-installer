@@ -27,6 +27,9 @@ wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot
 
 > ###Support und Hilfe
 
+<table>
+<a href="https://discord.gg/yZM5zzD"><img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png" alt="Discord Server" height="100" width="300" /></a>
+</table>
 
 > #### Bei Problemen bitte ein Issues bei Github machen !!!!!!
 
@@ -46,9 +49,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/Rooting21/Musikbot
  
 
 
-<table>
-<iframe src="https://discordapp.com/widget?id=269102029220085760&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-</table>
+
 #Lizenz
 
 <table>
