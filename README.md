@@ -1,5 +1,5 @@
 # Musikbot-Installer-for-Ubuntu-und-Debian
-![GitHub Stars2](https://img.shields.io/github/stars/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian.svg?style=flat-square)   [![Github All Releases](https://img.shields.io/github/downloads/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian/total.svg)](https://github.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian) ![GitHub Issues](https://img.shields.io/github/issues/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian.svg?style=flat-square)
+![GitHub Stars2](https://img.shields.io/github/stars/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian.svg?style=flat-square)   [!(https://github.com/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian) ![GitHub Issues](https://img.shields.io/github/issues/Rooting21/Musikbot-Installer-for-Ubuntu-und-Debian.svg?style=flat-square)
 
 <dl>
 
